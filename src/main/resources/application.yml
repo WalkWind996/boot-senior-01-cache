@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://192.168.1.2:3306/spring_cache?serverTimezone=UTC&useUnicode=true&characterEncoding=utf8&useSSL=false
+    type: com.alibaba.druid.pool.DruidDataSource
+  redis:
+    host: 192.168.1.5
+
+# 开启mybaits驼峰命名绑定
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+#    配置某包下打印日志信息级别
+logging:
+  level:
+    com.walkwind.boot.mapper: debug
+
+debug: true
